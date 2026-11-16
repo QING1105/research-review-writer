@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/research-review-writer-icon.png" alt="Research Review Writer — RRW" width="180">
+</p>
+
 # Research Review Writer
 
 **理清综述逻辑，写出贴近参考论文风格的英文。**
@@ -16,14 +20,13 @@
 
 ## 安装
 
-下载本仓库后，在仓库目录运行：
+在 Codex 对话中输入：
 
-```bash
-npx skills add . --skill research-review-writer -a codex -g
-python -m pip install -r requirements.txt
+```text
+$skill-installer 安装 https://github.com/QING1105/research-review-writer
 ```
 
-需要 Node.js 22.20+ 和 Python 3.11+。第一条命令通过 [skills CLI](https://github.com/vercel-labs/skills) 安装到 Codex，第二条安装 Python 依赖。
+安装完成后，在下一轮对话中使用 `$research-review-writer` 调用。首次使用时，按[配置说明](references/corpus-setup.md)准备 Python 依赖和参考库。
 
 ## 使用
 

@@ -1,5 +1,19 @@
 # 参考库准备与运行设置
 
+## 运行准备
+
+需要 Python 3.11 或更新版本。安装 Skill 后，可以直接让 Codex 帮你安装依赖并配置参考库：
+
+```text
+请为 research-review-writer 安装 Python 依赖，并根据我的论文材料配置参考库。
+```
+
+手动安装依赖时，在已安装的 `research-review-writer` 目录运行：
+
+```bash
+python -m pip install -r requirements.txt
+```
+
 ## 先准备哪些材料
 
 选取与你的研究方向、目标章节和期刊写法相近的论文。以完整段落保存原文，并保留句子在原段中的位置。“论述怎样推进”和“英文怎样表达”分别标注，写作时分别挑选。
