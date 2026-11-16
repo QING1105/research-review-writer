@@ -1,0 +1,55 @@
+{
+  "corpus_root": "./data/corpus",
+  "annotation_version": "abstract-introduction-v2",
+  "runtime_directory": "style/writer-runtime-v1",
+  "runs_directory": "runs/writing",
+  "execution_backend": "current_skill_host",
+  "tokenizer": {
+    "encoding": "o200k_base",
+    "measurement": "reference_encoding_for_material_budget"
+  },
+  "budgets": {
+    "candidate_tokens": 2400,
+    "paragraph_candidate_tokens": 2400,
+    "paragraph_tokens": 600,
+    "style_tokens": 1800,
+    "draft_unit_tokens": 3200,
+    "writer_input_tokens": 6500,
+    "max_candidates": 16,
+    "max_references": 5
+  },
+  "retrieval": {
+    "ranker": "sqlite_fts5_bm25",
+    "candidate_scan_limit": 100
+  },
+  "reference_audit": {
+    "enabled": true,
+    "sources": [
+      "crossref",
+      "pubmed",
+      "openalex"
+    ],
+    "contact_email": "",
+    "ncbi_api_key": "",
+    "cache_dir": ".runtime/ref-cache",
+    "cache_days_retraction": 30,
+    "title_similarity_min": 0.9,
+    "auto_apply_metadata_fixes": false,
+    "block_on": [
+      "pending",
+      "unverified_offline",
+      "inline_markers_absent_unconfirmed",
+      "retracted_undecided"
+    ]
+  },
+  "support_check": {
+    "enabled": true,
+    "max_claims": 80,
+    "scope": [
+      "finding_with_quantities",
+      "established",
+      "reported"
+    ],
+    "fulltext": "pmc_open_access_only"
+  }
+}

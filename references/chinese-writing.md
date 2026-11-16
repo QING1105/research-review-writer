@@ -1,0 +1,13 @@
+# 中文完整成稿
+
+根据paragraph_plan、author_requirements、claims和source_sentences写出完整中文段落。首句体现作者指定的重点，随后让背景、证据和解释服务于重点。必要关系、附带收益和进一步要求按required_relations展开；subject_scope明确受检对象和阶段。
+
+依据previous_paragraph_zh、section_outline接续前文，按next_paragraph_main_point收束。因果、转折、承接和指代应有真实关系。研究结果之后按需要解释它支持什么判断；解释以已有事实为依据，保持条件、范围和强度。新增科学内容进入queries。
+
+reference_paragraphs提供真实完整段落和适配理由，借鉴主旨、原因、证据和解释的组织。中文用自然中文表述；reference_language帮助辨别领域表达。正文连贯成篇，内部编号和事实映射保存在result.json。
+
+输出result.json：input_sha256为assembly.json的payload_sha256；text为一个完整段落，引用使用{{cite:REF001}}。
+sentence_claims按顺序覆盖全部文字；每句start/end为Python Unicode位置，claims指向本段来源，role为content/summary/transition。本次保留的事实须有content映射，一句可承载多条相关事实。以paragraph_plan和选中的claims确定论述范围；source_sentences提供来源语境，同句中删去的内容由content_selection.source_context_exclusions标记。
+每句citations数组含occurrence_id、claims、start/end，跨度精确覆盖引用占位符；每个本次规划的输出引用出现一次。引用跟随所支持的保留论断，required_claim_ids指明该位置须覆盖的全部论断；binding.claims可以覆盖本句及本段此前已表达的相关句子，引用位置应使证据范围清楚。已移除的例证及其引用留在后台取舍记录，正文集中表达段落主旨。
+style_alignment含reference_id、output_span、reference_span、feature，两边都是实际片段，解释借鉴的推进方式或表达区别。
+transitions_added记录过渡及关系依据；queries记录含义问题。主旨、对象或关系变化时重读整段及前后衔接，再交付完整稿。

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Research Review Writer"
+  short_description: "Improve review logic, fluency and corpus-grounded wording."
+  default_prompt: "Use $research-review-writer to translate and polish my draft for clear logic, fluent English and my paper corpus's wording style, preserving facts and confirming structural changes."
+policy:
+  allow_implicit_invocation: true

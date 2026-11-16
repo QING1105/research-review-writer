@@ -1,0 +1,8 @@
+{"sentence_id": "DEMO-C001-S01", "chunk_id": "DEMO-C001", "labels": {"sentence_roles": ["VALUE"]}}
+{"sentence_id": "DEMO-C001-S02", "chunk_id": "DEMO-C001", "labels": {"sentence_roles": ["GAP"]}}
+{"sentence_id": "DEMO-C002-S01", "chunk_id": "DEMO-C002", "labels": {"sentence_roles": ["VALUE"]}}
+{"sentence_id": "DEMO-C002-S02", "chunk_id": "DEMO-C002", "labels": {"sentence_roles": ["GAP"]}}
+{"sentence_id": "DEMO-C003-S01", "chunk_id": "DEMO-C003", "labels": {"sentence_roles": ["VALUE"]}}
+{"sentence_id": "DEMO-C003-S02", "chunk_id": "DEMO-C003", "labels": {"sentence_roles": ["GAP"]}}
+{"sentence_id": "DEMO-C004-S01", "chunk_id": "DEMO-C004", "labels": {"sentence_roles": ["VALUE"]}}
+{"sentence_id": "DEMO-C004-S02", "chunk_id": "DEMO-C004", "labels": {"sentence_roles": ["GAP"]}}

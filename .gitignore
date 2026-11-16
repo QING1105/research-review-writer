@@ -1,0 +1,38 @@
+# Personal settings and credentials
+/project.local.json
+*.local.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*
+secrets*
+
+# Author material and generated results
+/data/
+/corpora/
+/runs/
+/outputs/
+/private/
+/backups/
+/tmp/
+/dist/
+*.docx
+*.pdf
+*.sqlite*
+*.db
+*.log
+
+# Installed dependencies and caches
+.runtime/
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.py[cod]
+*.pyd
+*.egg-info/
+.pytest_cache/
+.DS_Store
+Thumbs.db
